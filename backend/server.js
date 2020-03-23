@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 var request = require("request");
 const cors = require('cors');
-const port = 5000;
+const port = 8081;
 const highRiskRoute = require('./routes/api/highrisk');
 const userRoute = require('./routes/api/users');
 const riskAssesmentRoute = require('./routes/api/riskassesments');
@@ -36,7 +36,3 @@ app.get('/',function(req,res){
 app.listen(port, function () {
     console.log("Server is running on Port: " + port);
 });
-
-
-
-
